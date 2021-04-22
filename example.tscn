@@ -1,13 +1,6 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=3 format=2]
 
-[ext_resource path="res://fonts/Platale128mono.ttf" type="DynamicFontData" id=1]
-[ext_resource path="res://gdscript/hex_viewer.tscn" type="PackedScene" id=2]
-
-[sub_resource type="DynamicFont" id=2]
-font_data = ExtResource( 1 )
-
-[sub_resource type="Theme" id=3]
-default_font = SubResource( 2 )
+[ext_resource path="res://gdscript/treemap/example/treemap_covid_in_thailand.tres.gd" type="Script" id=2]
 
 [sub_resource type="GDScript" id=1]
 script/source = "extends Control
@@ -21,6 +14,12 @@ script/source = "extends Control
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	$WindowDialog.show()
+	pass
+	#var a := $WindowDialog/hex as HexViewer
+	#a.data.resize(10000)
+	#for i in range(10000) :
+	#	a.data.set(i, randi())
+	#$WindowDialog.show()
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
@@ -35,7 +34,6 @@ margin_left = -2.0
 margin_top = 1.0
 margin_right = -2.0
 margin_bottom = 1.0
-theme = SubResource( 3 )
 script = SubResource( 1 )
 __meta__ = {
 "_edit_use_anchors_": false
@@ -43,17 +41,19 @@ __meta__ = {
 
 [node name="WindowDialog" type="WindowDialog" parent="."]
 visible = true
-margin_left = 73.9989
-margin_top = 89.135
-margin_right = 499.999
-margin_bottom = 386.135
+margin_left = 41.0
+margin_top = 55.0
+margin_right = 1334.0
+margin_bottom = 730.0
 resizable = true
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="hex" parent="WindowDialog" instance=ExtResource( 2 )]
+[node name="treemap_frame" type="Control" parent="WindowDialog"]
 anchor_right = 1.0
 anchor_bottom = 1.0
-margin_right = 0.0
-margin_bottom = 0.0
+script = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}

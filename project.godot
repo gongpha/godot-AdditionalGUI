@@ -13,15 +13,32 @@ _global_script_classes=[ {
 "class": "HexViewer",
 "language": "GDScript",
 "path": "res://gdscript/hex_viewer.gd"
+}, {
+"base": "Reference",
+"class": "Squatify",
+"language": "GDScript",
+"path": "res://gdscript/treemap/squarify.gd"
+}, {
+"base": "Reference",
+"class": "TreeMap",
+"language": "GDScript",
+"path": "res://gdscript/treemap/treemap.gd"
 } ]
 _global_script_class_icons={
-"HexViewer": ""
+"HexViewer": "",
+"Squatify": "",
+"TreeMap": ""
 }
 
 [application]
 
 config/name="GodotAdditionalWidget"
 run/main_scene="res://example.tscn"
+
+[display]
+
+window/size/width=1366
+window/size/height=768
 
 [physics]
 
