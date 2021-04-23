@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=2]
 
-[ext_resource path="res://gdscript/treemap/example/treemap_covid_in_thailand.tres.gd" type="Script" id=2]
+[ext_resource path="res://gdscript/treemap/template/treemap_container.gd" type="Script" id=1]
 
 [sub_resource type="GDScript" id=1]
 script/source = "extends Control
@@ -30,10 +30,7 @@ func _ready():
 [node name="Control" type="Control"]
 anchor_right = 1.0
 anchor_bottom = 1.0
-margin_left = -2.0
-margin_top = 1.0
-margin_right = -2.0
-margin_bottom = 1.0
+margin_top = -3.0
 script = SubResource( 1 )
 __meta__ = {
 "_edit_use_anchors_": false
@@ -43,17 +40,491 @@ __meta__ = {
 visible = true
 margin_left = 41.0
 margin_top = 55.0
-margin_right = 1334.0
-margin_bottom = 730.0
+margin_right = 649.0
+margin_bottom = 418.0
 resizable = true
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="treemap_frame" type="Control" parent="WindowDialog"]
+[node name="Container" type="Container" parent="WindowDialog"]
 anchor_right = 1.0
 anchor_bottom = 1.0
-script = ExtResource( 2 )
+size_flags_horizontal = 3
+size_flags_vertical = 3
+script = ExtResource( 1 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
+
+[node name="Button" type="Button" parent="WindowDialog/Container"]
+margin_left = 15.0
+margin_top = 15.0
+margin_right = 48.0
+margin_bottom = 35.0
+text = "aaa"
+
+[node name="Container2" type="Container" parent="WindowDialog/Container"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button" type="Button" parent="WindowDialog/Container/Container2"]
+margin_left = 15.0
+margin_top = 15.0
+margin_right = 48.0
+margin_bottom = 35.0
+text = "aaa"
+
+[node name="Container3" type="Container" parent="WindowDialog/Container/Container2"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button" type="Button" parent="WindowDialog/Container/Container2/Container3"]
+margin_left = 15.0
+margin_top = 15.0
+margin_right = 48.0
+margin_bottom = 35.0
+text = "aaa"
+
+[node name="Container2" type="Container" parent="WindowDialog/Container/Container2/Container3"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button" type="Button" parent="WindowDialog/Container/Container2/Container3/Container2"]
+margin_left = 15.0
+margin_top = 15.0
+margin_right = 48.0
+margin_bottom = 35.0
+text = "aaa"
+
+[node name="Container4" type="Container" parent="WindowDialog/Container/Container2/Container3/Container2"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button" type="Button" parent="WindowDialog/Container/Container2/Container3/Container2/Container4"]
+margin_left = 15.0
+margin_top = 15.0
+margin_right = 48.0
+margin_bottom = 35.0
+text = "aaa"
+
+[node name="Container2" type="Container" parent="WindowDialog/Container/Container2/Container3/Container2/Container4"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button" type="Button" parent="WindowDialog/Container/Container2/Container3/Container2/Container4/Container2"]
+margin_left = 15.0
+margin_top = 15.0
+margin_right = 48.0
+margin_bottom = 35.0
+text = "aaa"
+
+[node name="Container3" type="Container" parent="WindowDialog/Container/Container2/Container3/Container2/Container4/Container2"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button" type="Button" parent="WindowDialog/Container/Container2/Container3/Container2/Container4/Container2/Container3"]
+margin_left = 15.0
+margin_top = 15.0
+margin_right = 48.0
+margin_bottom = 35.0
+text = "aaa"
+
+[node name="Container2" type="Container" parent="WindowDialog/Container/Container2/Container3/Container2/Container4/Container2/Container3"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button" type="Button" parent="WindowDialog/Container/Container2/Container3/Container2/Container4/Container2/Container3/Container2"]
+margin_left = 15.0
+margin_top = 15.0
+margin_right = 48.0
+margin_bottom = 35.0
+text = "aaa"
+
+[node name="Container5" type="Container" parent="WindowDialog/Container/Container2/Container3/Container2/Container4/Container2/Container3/Container2"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button" type="Button" parent="WindowDialog/Container/Container2/Container3/Container2/Container4/Container2/Container3/Container2/Container5"]
+margin_left = 15.0
+margin_top = 15.0
+margin_right = 48.0
+margin_bottom = 35.0
+text = "aaa"
+
+[node name="Container2" type="Container" parent="WindowDialog/Container/Container2/Container3/Container2/Container4/Container2/Container3/Container2/Container5"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button" type="Button" parent="WindowDialog/Container/Container2/Container3/Container2/Container4/Container2/Container3/Container2/Container5/Container2"]
+margin_left = 15.0
+margin_top = 15.0
+margin_right = 48.0
+margin_bottom = 35.0
+text = "aaa"
+
+[node name="Container3" type="Container" parent="WindowDialog/Container/Container2/Container3/Container2/Container4/Container2/Container3/Container2/Container5/Container2"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button" type="Button" parent="WindowDialog/Container/Container2/Container3/Container2/Container4/Container2/Container3/Container2/Container5/Container2/Container3"]
+margin_left = 15.0
+margin_top = 15.0
+margin_right = 48.0
+margin_bottom = 35.0
+text = "aaa"
+
+[node name="Container2" type="Container" parent="WindowDialog/Container/Container2/Container3/Container2/Container4/Container2/Container3/Container2/Container5/Container2/Container3"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button" type="Button" parent="WindowDialog/Container/Container2/Container3/Container2/Container4/Container2/Container3/Container2/Container5/Container2/Container3/Container2"]
+margin_left = 15.0
+margin_top = 15.0
+margin_right = 48.0
+margin_bottom = 35.0
+text = "aaa"
+
+[node name="Container4" type="Container" parent="WindowDialog/Container/Container2/Container3/Container2/Container4/Container2/Container3/Container2/Container5/Container2/Container3/Container2"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button" type="Button" parent="WindowDialog/Container/Container2/Container3/Container2/Container4/Container2/Container3/Container2/Container5/Container2/Container3/Container2/Container4"]
+margin_left = 15.0
+margin_top = 15.0
+margin_right = 48.0
+margin_bottom = 35.0
+text = "aaa"
+
+[node name="Container2" type="Container" parent="WindowDialog/Container/Container2/Container3/Container2/Container4/Container2/Container3/Container2/Container5/Container2/Container3/Container2/Container4"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button" type="Button" parent="WindowDialog/Container/Container2/Container3/Container2/Container4/Container2/Container3/Container2/Container5/Container2/Container3/Container2/Container4/Container2"]
+margin_left = 15.0
+margin_top = 15.0
+margin_right = 48.0
+margin_bottom = 35.0
+text = "aaa"
+
+[node name="Container3" type="Container" parent="WindowDialog/Container/Container2/Container3/Container2/Container4/Container2/Container3/Container2/Container5/Container2/Container3/Container2/Container4/Container2"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button" type="Button" parent="WindowDialog/Container/Container2/Container3/Container2/Container4/Container2/Container3/Container2/Container5/Container2/Container3/Container2/Container4/Container2/Container3"]
+margin_left = 15.0
+margin_top = 15.0
+margin_right = 48.0
+margin_bottom = 35.0
+text = "aaa"
+
+[node name="Container2" type="Container" parent="WindowDialog/Container/Container2/Container3/Container2/Container4/Container2/Container3/Container2/Container5/Container2/Container3/Container2/Container4/Container2/Container3"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button" type="Button" parent="WindowDialog/Container/Container2/Container3/Container2/Container4/Container2/Container3/Container2/Container5/Container2/Container3/Container2/Container4/Container2/Container3/Container2"]
+margin_left = 15.0
+margin_top = 15.0
+margin_right = 48.0
+margin_bottom = 35.0
+text = "aaa"
+
+[node name="Container5" type="Container" parent="WindowDialog/Container/Container2/Container3/Container2/Container4/Container2/Container3/Container2/Container5/Container2/Container3/Container2/Container4/Container2/Container3/Container2"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button" type="Button" parent="WindowDialog/Container/Container2/Container3/Container2/Container4/Container2/Container3/Container2/Container5/Container2/Container3/Container2/Container4/Container2/Container3/Container2/Container5"]
+margin_left = 15.0
+margin_top = 15.0
+margin_right = 48.0
+margin_bottom = 35.0
+text = "aaa"
+
+[node name="Container2" type="Container" parent="WindowDialog/Container/Container2/Container3/Container2/Container4/Container2/Container3/Container2/Container5/Container2/Container3/Container2/Container4/Container2/Container3/Container2/Container5"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button" type="Button" parent="WindowDialog/Container/Container2/Container3/Container2/Container4/Container2/Container3/Container2/Container5/Container2/Container3/Container2/Container4/Container2/Container3/Container2/Container5/Container2"]
+margin_left = 15.0
+margin_top = 15.0
+margin_right = 48.0
+margin_bottom = 35.0
+text = "aaa"
+
+[node name="Container3" type="Container" parent="WindowDialog/Container/Container2/Container3/Container2/Container4/Container2/Container3/Container2/Container5/Container2/Container3/Container2/Container4/Container2/Container3/Container2/Container5/Container2"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button" type="Button" parent="WindowDialog/Container/Container2/Container3/Container2/Container4/Container2/Container3/Container2/Container5/Container2/Container3/Container2/Container4/Container2/Container3/Container2/Container5/Container2/Container3"]
+margin_left = 15.0
+margin_top = 15.0
+margin_right = 48.0
+margin_bottom = 35.0
+text = "aaa"
+
+[node name="Container2" type="Container" parent="WindowDialog/Container/Container2/Container3/Container2/Container4/Container2/Container3/Container2/Container5/Container2/Container3/Container2/Container4/Container2/Container3/Container2/Container5/Container2/Container3"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button" type="Button" parent="WindowDialog/Container/Container2/Container3/Container2/Container4/Container2/Container3/Container2/Container5/Container2/Container3/Container2/Container4/Container2/Container3/Container2/Container5/Container2/Container3/Container2"]
+margin_left = 15.0
+margin_top = 15.0
+margin_right = 48.0
+margin_bottom = 35.0
+text = "aaa"
+
+[node name="Container4" type="Container" parent="WindowDialog/Container/Container2/Container3/Container2/Container4/Container2/Container3/Container2/Container5/Container2/Container3/Container2/Container4/Container2/Container3/Container2/Container5/Container2/Container3/Container2"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button" type="Button" parent="WindowDialog/Container/Container2/Container3/Container2/Container4/Container2/Container3/Container2/Container5/Container2/Container3/Container2/Container4/Container2/Container3/Container2/Container5/Container2/Container3/Container2/Container4"]
+margin_left = 15.0
+margin_top = 15.0
+margin_right = 48.0
+margin_bottom = 35.0
+text = "aaa"
+
+[node name="Container2" type="Container" parent="WindowDialog/Container/Container2/Container3/Container2/Container4/Container2/Container3/Container2/Container5/Container2/Container3/Container2/Container4/Container2/Container3/Container2/Container5/Container2/Container3/Container2/Container4"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button" type="Button" parent="WindowDialog/Container/Container2/Container3/Container2/Container4/Container2/Container3/Container2/Container5/Container2/Container3/Container2/Container4/Container2/Container3/Container2/Container5/Container2/Container3/Container2/Container4/Container2"]
+margin_left = 15.0
+margin_top = 15.0
+margin_right = 48.0
+margin_bottom = 35.0
+text = "aaa"
+
+[node name="Container3" type="Container" parent="WindowDialog/Container/Container2/Container3/Container2/Container4/Container2/Container3/Container2/Container5/Container2/Container3/Container2/Container4/Container2/Container3/Container2/Container5/Container2/Container3/Container2/Container4/Container2"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button" type="Button" parent="WindowDialog/Container/Container2/Container3/Container2/Container4/Container2/Container3/Container2/Container5/Container2/Container3/Container2/Container4/Container2/Container3/Container2/Container5/Container2/Container3/Container2/Container4/Container2/Container3"]
+margin_left = 15.0
+margin_top = 15.0
+margin_right = 48.0
+margin_bottom = 35.0
+text = "aaa"
+
+[node name="Container2" type="Container" parent="WindowDialog/Container/Container2/Container3/Container2/Container4/Container2/Container3/Container2/Container5/Container2/Container3/Container2/Container4/Container2/Container3/Container2/Container5/Container2/Container3/Container2/Container4/Container2/Container3"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button" type="Button" parent="WindowDialog/Container/Container2/Container3/Container2/Container4/Container2/Container3/Container2/Container5/Container2/Container3/Container2/Container4/Container2/Container3/Container2/Container5/Container2/Container3/Container2/Container4/Container2/Container3/Container2"]
+margin_left = 15.0
+margin_top = 15.0
+margin_right = 48.0
+margin_bottom = 35.0
+text = "aaa"
+
+[node name="Container5" type="Container" parent="WindowDialog/Container/Container2/Container3/Container2/Container4/Container2/Container3/Container2/Container5/Container2/Container3/Container2/Container4/Container2/Container3/Container2/Container5/Container2/Container3/Container2/Container4/Container2/Container3/Container2"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button" type="Button" parent="WindowDialog/Container/Container2/Container3/Container2/Container4/Container2/Container3/Container2/Container5/Container2/Container3/Container2/Container4/Container2/Container3/Container2/Container5/Container2/Container3/Container2/Container4/Container2/Container3/Container2/Container5"]
+margin_left = 15.0
+margin_top = 15.0
+margin_right = 48.0
+margin_bottom = 35.0
+text = "aaa"
+
+[node name="Container2" type="Container" parent="WindowDialog/Container/Container2/Container3/Container2/Container4/Container2/Container3/Container2/Container5/Container2/Container3/Container2/Container4/Container2/Container3/Container2/Container5/Container2/Container3/Container2/Container4/Container2/Container3/Container2/Container5"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button" type="Button" parent="WindowDialog/Container/Container2/Container3/Container2/Container4/Container2/Container3/Container2/Container5/Container2/Container3/Container2/Container4/Container2/Container3/Container2/Container5/Container2/Container3/Container2/Container4/Container2/Container3/Container2/Container5/Container2"]
+margin_left = 15.0
+margin_top = 15.0
+margin_right = 48.0
+margin_bottom = 35.0
+text = "aaa"
+
+[node name="Container3" type="Container" parent="WindowDialog/Container/Container2/Container3/Container2/Container4/Container2/Container3/Container2/Container5/Container2/Container3/Container2/Container4/Container2/Container3/Container2/Container5/Container2/Container3/Container2/Container4/Container2/Container3/Container2/Container5/Container2"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button" type="Button" parent="WindowDialog/Container/Container2/Container3/Container2/Container4/Container2/Container3/Container2/Container5/Container2/Container3/Container2/Container4/Container2/Container3/Container2/Container5/Container2/Container3/Container2/Container4/Container2/Container3/Container2/Container5/Container2/Container3"]
+margin_left = 15.0
+margin_top = 15.0
+margin_right = 48.0
+margin_bottom = 35.0
+text = "aaa"
+
+[node name="Container2" type="Container" parent="WindowDialog/Container/Container2/Container3/Container2/Container4/Container2/Container3/Container2/Container5/Container2/Container3/Container2/Container4/Container2/Container3/Container2/Container5/Container2/Container3/Container2/Container4/Container2/Container3/Container2/Container5/Container2/Container3"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button" type="Button" parent="WindowDialog/Container/Container2/Container3/Container2/Container4/Container2/Container3/Container2/Container5/Container2/Container3/Container2/Container4/Container2/Container3/Container2/Container5/Container2/Container3/Container2/Container4/Container2/Container3/Container2/Container5/Container2/Container3/Container2"]
+margin_left = 15.0
+margin_top = 15.0
+margin_right = 48.0
+margin_bottom = 35.0
+text = "aaa"
+
+[node name="Container4" type="Container" parent="WindowDialog/Container/Container2/Container3/Container2/Container4/Container2/Container3/Container2/Container5/Container2/Container3/Container2/Container4/Container2/Container3/Container2/Container5/Container2/Container3/Container2/Container4/Container2/Container3/Container2/Container5/Container2/Container3/Container2"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button" type="Button" parent="WindowDialog/Container/Container2/Container3/Container2/Container4/Container2/Container3/Container2/Container5/Container2/Container3/Container2/Container4/Container2/Container3/Container2/Container5/Container2/Container3/Container2/Container4/Container2/Container3/Container2/Container5/Container2/Container3/Container2/Container4"]
+margin_left = 15.0
+margin_top = 15.0
+margin_right = 48.0
+margin_bottom = 35.0
+text = "aaa"
+
+[node name="Container2" type="Container" parent="WindowDialog/Container/Container2/Container3/Container2/Container4/Container2/Container3/Container2/Container5/Container2/Container3/Container2/Container4/Container2/Container3/Container2/Container5/Container2/Container3/Container2/Container4/Container2/Container3/Container2/Container5/Container2/Container3/Container2/Container4"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button" type="Button" parent="WindowDialog/Container/Container2/Container3/Container2/Container4/Container2/Container3/Container2/Container5/Container2/Container3/Container2/Container4/Container2/Container3/Container2/Container5/Container2/Container3/Container2/Container4/Container2/Container3/Container2/Container5/Container2/Container3/Container2/Container4/Container2"]
+margin_left = 15.0
+margin_top = 15.0
+margin_right = 48.0
+margin_bottom = 35.0
+text = "aaa"
+
+[node name="Container3" type="Container" parent="WindowDialog/Container/Container2/Container3/Container2/Container4/Container2/Container3/Container2/Container5/Container2/Container3/Container2/Container4/Container2/Container3/Container2/Container5/Container2/Container3/Container2/Container4/Container2/Container3/Container2/Container5/Container2/Container3/Container2/Container4/Container2"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button" type="Button" parent="WindowDialog/Container/Container2/Container3/Container2/Container4/Container2/Container3/Container2/Container5/Container2/Container3/Container2/Container4/Container2/Container3/Container2/Container5/Container2/Container3/Container2/Container4/Container2/Container3/Container2/Container5/Container2/Container3/Container2/Container4/Container2/Container3"]
+margin_left = 15.0
+margin_top = 15.0
+margin_right = 48.0
+margin_bottom = 35.0
+text = "aaa"
+
+[node name="Container2" type="Container" parent="WindowDialog/Container/Container2/Container3/Container2/Container4/Container2/Container3/Container2/Container5/Container2/Container3/Container2/Container4/Container2/Container3/Container2/Container5/Container2/Container3/Container2/Container4/Container2/Container3/Container2/Container5/Container2/Container3/Container2/Container4/Container2/Container3"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button" type="Button" parent="WindowDialog/Container/Container2/Container3/Container2/Container4/Container2/Container3/Container2/Container5/Container2/Container3/Container2/Container4/Container2/Container3/Container2/Container5/Container2/Container3/Container2/Container4/Container2/Container3/Container2/Container5/Container2/Container3/Container2/Container4/Container2/Container3/Container2"]
+margin_left = 15.0
+margin_top = 15.0
+margin_right = 48.0
+margin_bottom = 35.0
+text = "aaa"

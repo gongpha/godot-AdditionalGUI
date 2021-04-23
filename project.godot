@@ -23,11 +23,17 @@ _global_script_classes=[ {
 "class": "TreeMap",
 "language": "GDScript",
 "path": "res://gdscript/treemap/treemap.gd"
+}, {
+"base": "Container",
+"class": "TreeMapRectContainer",
+"language": "GDScript",
+"path": "res://gdscript/treemap/template/treemap_container.gd"
 } ]
 _global_script_class_icons={
 "HexViewer": "",
 "Squatify": "",
-"TreeMap": ""
+"TreeMap": "",
+"TreeMapRectContainer": ""
 }
 
 [application]

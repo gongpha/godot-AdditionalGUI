@@ -62,6 +62,9 @@ func clear_data() -> void :
 func get_data_weight(data) -> float :
 	return data
 	
+func set_data_weight(data, weight : float) :
+	data = weight
+	
 func get_cached_rect(idx : int) -> Rect2 :
 	return _rendered_rects_cache[idx]
 	
